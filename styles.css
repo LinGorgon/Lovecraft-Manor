@@ -1,0 +1,262 @@
+body {
+  font-family: Verdana;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#screen {
+	height: 400px;
+	width: 600px;
+	border: 3px solid white;
+	margin: 10% auto;
+}
+
+#main-screen {
+	height: 240px;
+	position: relative;
+}
+
+#ui {
+	display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+	flex-direction: column;
+  padding: 0;
+	margin-top: 15px;
+	height: 110px;
+}
+
+#current-action {
+	height: 5px;
+	margin: 7px;
+}
+
+#verbs {
+	margin-left: 8px;
+}
+
+#main-screen {
+	padding-top: 7px;
+}
+
+#info {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+  align-items: flex-start;
+	margin: 0 0 5px 5px;
+	width: 100%;
+	height: 100%;
+}
+
+#results {
+	text-align: center;
+	flex-grow:1;
+	margin: auto 10px auto 5px;
+}
+
+#inventory {
+	height: 30px;
+	width: 100%;
+	margin: 0;
+	margin-top: 7px;
+}
+
+.box {
+	background-color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-right: 5px;
+  outline: none;
+  overflow: hidden;
+  padding: 1px 20px 1px;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 90px;
+	height: 26px;
+	border: 1px solid white;
+}
+
+.navigation {
+	display: none;
+}
+
+.button-31 {
+  background-color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 1px 20px 1px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 90px;
+	height: 30px;
+	border: 1px solid white;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .80;
+}
+
+
+.scenario:not(.current) {
+    display: none;
+}
+
+#letter {
+	position: absolute;
+	top: 140px;
+  left: 254px;
+  width: 76px;
+	height: 70px;
+}
+
+#occult {
+	position: absolute;
+	top: 27px;
+  left: 210px;
+  width: 170px;
+	height: 65px;
+}
+
+.lobby {
+	position: absolute;
+	top: 215px;
+  left: 150px;
+  width: 300px;
+	height: 30px;
+}
+
+#lobby-dest0 {
+	position: absolute;
+	top: 170px;
+  left: 215px;
+  width: 210px;
+	height: 76px;
+}
+
+#bookcase-dest {
+	position: absolute;
+	top: 6px;
+  left: 120px;
+  width: 50px;
+	height: 175px;
+}
+
+#chimney-dest {
+	position: absolute;
+	top: 90px;
+  left: 240px;
+  width: 110px;
+	height: 80px;
+}
+
+#clock-dest {
+	position: absolute;
+	top: 6px;
+  left: 390px;
+  width: 50px;
+	height: 160px;
+}
+
+#clockCloseUp {
+	position: absolute;
+	top: 6px;
+  left: 254px;
+  width: 137px;
+	height: 210px;
+}
+
+#studio-dest {
+	position: absolute;
+	top: 6px;
+  left: 254px;
+  width: 137px;
+	height: 210px;
+	display: none;
+}
+
+#manor {
+	position: absolute;
+	top: 6px;
+  left: 200px;
+  width: 245px;
+	height: 163px;
+}
+
+#globe {
+	position: absolute;
+	top: 95px;
+  left: 50px;
+  width: 50px;
+	height: 50px;
+}
+
+#openGlobe {
+	position: absolute;
+	top: 95px;
+  left: 50px;
+  width: 50px;
+	height: 50px;
+	display: none;
+}
+
+#crowbar {
+	position: absolute;
+	top: 95px;
+  left: 50px;
+  width: 50px;
+	height: 50px;
+	display: none;
+}
+
+#ashes {
+	position: absolute;
+	top: 120px;
+  left: 180px;
+  width: 250px;
+	height: 75px;
+}
+
+#mess {
+	position: absolute;
+	top: 175px;
+  left: 160px;
+  width: 230px;
+	height: 70px;
+}
+
+#novels {
+	position: absolute;
+	top: 6px;
+  left: 110px;
+  width: 320px;
+	height: 210px;
+}
+
+.nonpresent {
+	display: none;
+}
