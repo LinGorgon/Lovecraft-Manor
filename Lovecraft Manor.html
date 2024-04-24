@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Lovecraft Manor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+		<div id="screen">
+			<div id="main-screen">
+				<div id="house" class="scenario current">
+					<img id="house" src="./images/house.png" />
+					<div id="lobby-dest0" class="direction" data-value="lobby"></div>
+						<div id="manor" class="point" data-value="old manor"></div>
+				</div>
+				<div id="studio" class="scenario">
+					<img id="books" src="./images/books.png" />
+					<div id="letter" class="point" data-value="letter"></div>
+					<div id="occult" class="point" data-value="occult books"></div>
+					<div id="book5" class="point nonpresent" data-value="Vermis"></div>
+					<div id="book6" class="point nonpresent" data-value="Occultus"></div>
+					<div id="book7" class="point nonpresent" data-value="Chants"></div>
+					<div id="lobby-dest1" class="direction lobby" data-value="lobby"></div>
+				</div>
+				<div id="lobby" class="scenario">
+					<img id="lobby" src="./images/room.png" />
+					<div id="clock-dest" class="direction" data-value="clock"></div>
+					<div id="chimney-dest" class="direction" data-value="chimney"></div>
+					<div id="bookcase-dest" class="direction" data-value="bookcase"></div>
+					<div id="globe" class="point" data-value="world globe"></div>
+					<div id="openGlobe" class="point" data-value="unlocked globe"></div>
+					<div id="crowbar" class="point" data-value="crowbar"></div>
+					<div id="mess" class="point" data-value="mess"></div>
+				</div>
+				<div id="clock" class="scenario">
+					<img id="clock" src="./images/clock.png" />
+					<div id="clockCloseUp" class="point" data-value="clock"></div>
+					<div id="studio-dest" class="direction" data-value="studio"></div>
+					<div id="lobby-dest2" class="direction lobby" data-value="lobby"></div>
+				</div>
+				<div id="chimney" class="scenario">
+					<img id="chimney" src="./images/chimney.png" />
+					<div id="lobby-dest3" class="direction lobby" data-value="lobby"></div>
+					<div id="ashes" class="point" data-value="ashes"></div>
+					<div id="key" class="point nonpresent" data-value="key"></div>
+				</div>
+				<div id="bookcase" class="scenario">
+					<img id="bookcase" src="./images/bookcase.png" />
+					<div id="novels" class="point" data-value="novels"></div>
+					<div id="book1" class="point nonpresent" data-value="El Ser"></div>
+					<div id="book2" class="point nonpresent" data-value="Epiphany"></div>
+					<div id="book3" class="point nonpresent" data-value="Dagon"></div>
+					<div id="book4" class="point nonpresent" data-value="It"></div>
+					<div id="lobby-dest4" class="direction lobby" data-value="lobby"></div>
+				</div>
+			<p id="current-action"></p>
+			<div id="ui">
+				<div id="info">
+					<table id="verbs">
+					<tr>
+						<td class="verb"><button type="button" class="button-31" id="look" value="Look at">Look</button></td>
+						<td class="verb"><button type="button" class="button-31" id="take" value="Take">Take</button></td>
+						<td class="verb"><button type="button" class="button-31" id="open" value="Open">Open</button></id>
+					</tr>
+					<tr>
+						<td class="verb"><button type="button" class="button-31" id="talk" value="Talk to">Talk</button></td>
+						<td class="verb"><button type="button" class="button-31" id="use" value="Use">Use</button></td>
+						<td class="verb"><button type="button" class="button-31" id="read" value="Read">Read</button></td>
+					</tr>
+					</table>
+					<p id="results"></p>
+				</div>
+				<table id="inventory">
+						<tr>
+							<td id="previous" class="box navigation" value="<">&lt;</td>
+							<td class="box inv-obj"></td>
+							<td class="box inv-obj"></td>
+							<td class="box inv-obj"></td>
+							<td class="box inv-obj"></td>
+							<td class="box inv-obj"></td>
+							<td class="box inv-obj"></td>
+							<td id="next" class="box navigation" value=">">&gt;</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
